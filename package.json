@@ -1,0 +1,40 @@
+{
+  "name": "e2e",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "eslint": "eslint . --max-warnings 0",
+    "eslint:fix": "eslint . --fix",
+    "prepare": "mookme init --only-hook --skip-types-selection && playwright install --with-deps",
+    "report:clean": "rimraf reports",
+    "report:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
+    "report:serve": "allure serve reports/allure-results",
+    "test": "./bdd test",
+    "test:parallel": "run-p --continue-on-error",
+    "test:chromium": "cucumber-js -p chromium",
+    "test:firefox": "cucumber-js -p firefox",
+    "test:webkit": "cucumber-js -p webkit"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.3.0",
+    "@escape.tech/mookme": "^2.4.0",
+    "@playwright/test": "^1.36.2",
+    "@types/config": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "allure-cucumberjs": "^2.5.0",
+    "allure-js-commons": "^2.5.0",
+    "commander": "^11.0.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "playwright": "^1.36.2",
+    "prettier": "3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

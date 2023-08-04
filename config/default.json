@@ -1,0 +1,24 @@
+{
+  "name": "Default settings inherited by each configuration",
+  "baseUrl": "https://playwright.dev",
+  "browsers": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "colors": true,
+  "debug": false,
+  "headless": true,
+  "inspect": false,
+  "only": false,
+  "parallel": 3,
+  "retry": 3,
+  "saveScreenshots": true,
+  "saveVideos": true,
+  "slowMo": 0,
+  "timeout": 10000,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}

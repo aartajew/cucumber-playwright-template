@@ -1,0 +1,8 @@
+{
+  "steps": [
+    {
+      "name": "pre-commit",
+      "command": "npm run eslint"
+    }
+  ]
+}
