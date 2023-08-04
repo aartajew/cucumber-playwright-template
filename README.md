@@ -57,5 +57,5 @@ If it still fails, you need to fix errors manually.
 
 ## @todo
 
-- add Mookme
+- use page objects
 
